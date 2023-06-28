@@ -1,0 +1,492 @@
+Name: Tags
+Type: BaseObjectType
+Children:
+- Name: CS1
+  Type: ModbusTag
+  DataType: Boolean
+  Value: false
+  Children:
+  - Name: MemoryArea
+    Type: BaseDataVariableType
+    DataType: ModbusMemoryArea
+    Value: 3
+  - Name: NumCoil
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 0
+- Name: CS2
+  Type: ModbusTag
+  DataType: Boolean
+  Value: false
+  Children:
+  - Name: MemoryArea
+    Type: BaseDataVariableType
+    DataType: ModbusMemoryArea
+    Value: 3
+  - Name: NumCoil
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 1
+  - Name: NumDiscreteInput
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 1
+- Name: CS3
+  Type: ModbusTag
+  DataType: Boolean
+  Value: false
+  Children:
+  - Name: MemoryArea
+    Type: BaseDataVariableType
+    DataType: ModbusMemoryArea
+    Value: 3
+  - Name: NumCoil
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 2
+  - Name: NumDiscreteInput
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 2
+- Name: CS4
+  Type: ModbusTag
+  DataType: Boolean
+  Value: false
+  Children:
+  - Name: MemoryArea
+    Type: BaseDataVariableType
+    DataType: ModbusMemoryArea
+    Value: 3
+  - Name: NumCoil
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 3
+  - Name: NumDiscreteInput
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 3
+- Name: CS5
+  Type: ModbusTag
+  DataType: Boolean
+  Value: false
+  Children:
+  - Name: MemoryArea
+    Type: BaseDataVariableType
+    DataType: ModbusMemoryArea
+    Value: 3
+  - Name: NumCoil
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 4
+  - Name: NumDiscreteInput
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 4
+- Name: SW1
+  Id: g=f6d0b054d4bfa7a03d0f1af5a55dcd19
+  Type: ModbusTag
+  DataType: Boolean
+  Value: false
+  Children:
+  - Name: MemoryArea
+    Type: BaseDataVariableType
+    DataType: ModbusMemoryArea
+    Value: 1
+  - Name: NumCoil
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 0
+  - Name: NumDiscreteInput
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 0
+- Name: SW2
+  Type: ModbusTag
+  DataType: Boolean
+  Value: false
+  Children:
+  - Name: MemoryArea
+    Type: BaseDataVariableType
+    DataType: ModbusMemoryArea
+    Value: 1
+  - Name: NumCoil
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 1
+  - Name: NumDiscreteInput
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 1
+- Name: SW3
+  Type: ModbusTag
+  DataType: Boolean
+  Value: false
+  Children:
+  - Name: MemoryArea
+    Type: BaseDataVariableType
+    DataType: ModbusMemoryArea
+    Value: 1
+  - Name: NumCoil
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 2
+  - Name: NumDiscreteInput
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 2
+- Name: SW4
+  Type: ModbusTag
+  DataType: Boolean
+  Value: false
+  Children:
+  - Name: MemoryArea
+    Type: BaseDataVariableType
+    DataType: ModbusMemoryArea
+    Value: 1
+  - Name: NumCoil
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 3
+  - Name: NumDiscreteInput
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 3
+- Name: SW5
+  Type: ModbusTag
+  DataType: Boolean
+  Value: false
+  Children:
+  - Name: MemoryArea
+    Type: BaseDataVariableType
+    DataType: ModbusMemoryArea
+    Value: 1
+  - Name: NumCoil
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 4
+  - Name: NumDiscreteInput
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 4
+- Name: SetSpeedInt
+  Type: ModbusTag
+  DataType: Int16
+  Value: 0
+  Children:
+  - Name: MemoryArea
+    Type: BaseDataVariableType
+    DataType: ModbusMemoryArea
+    Value: 0
+  - Name: BitOffset
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 0
+  - Name: NumRegister
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 0
+  - Name: MaximumLength
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 80
+- Name: SetSpeedDint
+  Type: ModbusTag
+  DataType: Int32
+  Value: 0
+  Children:
+  - Name: MemoryArea
+    Type: BaseDataVariableType
+    DataType: ModbusMemoryArea
+    Value: 0
+  - Name: BitOffset
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 0
+  - Name: NumRegister
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 1
+  - Name: MaximumLength
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 80
+- Name: SetSpeedReal
+  Type: ModbusTag
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: MemoryArea
+    Type: BaseDataVariableType
+    DataType: ModbusMemoryArea
+    Value: 0
+  - Name: BitOffset
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 0
+  - Name: NumRegister
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 3
+  - Name: MaximumLength
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 80
+- Name: ActSpeedInt
+  Type: ModbusTag
+  DataType: Int16
+  Value: 0
+  Children:
+  - Name: MemoryArea
+    Type: BaseDataVariableType
+    DataType: ModbusMemoryArea
+    Value: 2
+  - Name: BitOffset
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 0
+  - Name: NumRegister
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 0
+  - Name: MaximumLength
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 80
+- Name: ActSpeedReal
+  Type: ModbusTag
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: MemoryArea
+    Type: BaseDataVariableType
+    DataType: ModbusMemoryArea
+    Value: 2
+  - Name: BitOffset
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 0
+  - Name: NumRegister
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 3
+  - Name: MaximumLength
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 80
+- Name: ActSpeedDint
+  Type: ModbusTag
+  DataType: Int32
+  Value: 0
+  Children:
+  - Name: MemoryArea
+    Type: BaseDataVariableType
+    DataType: ModbusMemoryArea
+    Value: 2
+  - Name: BitOffset
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 0
+  - Name: NumRegister
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 1
+  - Name: MaximumLength
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 80
+- Name: TimerValue
+  Type: ModbusTag
+  DataType: Int32
+  Value: 0
+  Children:
+  - Name: NumRegister
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 5
+  - Name: MemoryArea
+    Type: BaseDataVariableType
+    DataType: ModbusMemoryArea
+    Value: 0
+- Name: StringVar1IntArray
+  Type: FolderType
+  Children:
+  - Name: S1VarInt1
+    Type: ModbusTag
+    DataType: Int16
+    Value: 0
+    Children:
+    - Name: NumRegister
+      Type: BaseDataVariableType
+      DataType: UInt16
+      Value: 7
+  - Name: S1VarInt2
+    Type: ModbusTag
+    DataType: Int16
+    Value: 0
+    Children:
+    - Name: NumRegister
+      Type: BaseDataVariableType
+      DataType: UInt16
+      Value: 8
+  - Name: S1VarInt3
+    Type: ModbusTag
+    DataType: Int16
+    Value: 0
+    Children:
+    - Name: NumRegister
+      Type: BaseDataVariableType
+      DataType: UInt16
+      Value: 9
+  - Name: S1VarInt4
+    Type: ModbusTag
+    DataType: Int16
+    Value: 0
+    Children:
+    - Name: NumRegister
+      Type: BaseDataVariableType
+      DataType: UInt16
+      Value: 10
+  - Name: S1VarInt5
+    Type: ModbusTag
+    DataType: Int16
+    Value: 0
+    Children:
+    - Name: NumRegister
+      Type: BaseDataVariableType
+      DataType: UInt16
+      Value: 11
+  - Name: S1VarInt6
+    Type: ModbusTag
+    DataType: Int16
+    Value: 0
+    Children:
+    - Name: NumRegister
+      Type: BaseDataVariableType
+      DataType: UInt16
+      Value: 12
+  - Name: S1VarInt7
+    Type: ModbusTag
+    DataType: Int16
+    Value: 0
+    Children:
+    - Name: NumRegister
+      Type: BaseDataVariableType
+      DataType: UInt16
+      Value: 13
+  - Name: S1VarInt8
+    Type: ModbusTag
+    DataType: Int16
+    Value: 0
+    Children:
+    - Name: NumRegister
+      Type: BaseDataVariableType
+      DataType: UInt16
+      Value: 14
+  - Name: S1VarInt9
+    Type: ModbusTag
+    DataType: Int16
+    Value: 0
+    Children:
+    - Name: NumRegister
+      Type: BaseDataVariableType
+      DataType: UInt16
+      Value: 15
+  - Name: S1VarInt10
+    Type: ModbusTag
+    DataType: Int16
+    Value: 0
+    Children:
+    - Name: NumRegister
+      Type: BaseDataVariableType
+      DataType: UInt16
+      Value: 16
+  - Name: S1VarInt11
+    Type: ModbusTag
+    DataType: Int16
+    Value: 0
+    Children:
+    - Name: NumRegister
+      Type: BaseDataVariableType
+      DataType: UInt16
+      Value: 17
+  - Name: S1VarInt12
+    Type: ModbusTag
+    DataType: Int16
+    Value: 0
+    Children:
+    - Name: NumRegister
+      Type: BaseDataVariableType
+      DataType: UInt16
+      Value: 18
+  - Name: S1VarInt13
+    Type: ModbusTag
+    DataType: Int16
+    Value: 0
+    Children:
+    - Name: NumRegister
+      Type: BaseDataVariableType
+      DataType: UInt16
+      Value: 19
+  - Name: S1VarInt14
+    Type: ModbusTag
+    DataType: Int16
+    Value: 0
+    Children:
+    - Name: NumRegister
+      Type: BaseDataVariableType
+      DataType: UInt16
+      Value: 20
+  - Name: S1VarInt15
+    Type: ModbusTag
+    DataType: Int16
+    Value: 0
+    Children:
+    - Name: NumRegister
+      Type: BaseDataVariableType
+      DataType: UInt16
+      Value: 21
+  - Name: S1VarInt16
+    Type: ModbusTag
+    DataType: Int16
+    Value: 0
+    Children:
+    - Name: NumRegister
+      Type: BaseDataVariableType
+      DataType: UInt16
+      Value: 22
+  - Name: S1VarInt17
+    Type: ModbusTag
+    DataType: Int16
+    Value: 0
+    Children:
+    - Name: NumRegister
+      Type: BaseDataVariableType
+      DataType: UInt16
+      Value: 23
+  - Name: S1VarInt18
+    Type: ModbusTag
+    DataType: Int16
+    Value: 0
+    Children:
+    - Name: NumRegister
+      Type: BaseDataVariableType
+      DataType: UInt16
+      Value: 24
+  - Name: S1VarInt19
+    Type: ModbusTag
+    DataType: Int16
+    Value: 0
+    Children:
+    - Name: NumRegister
+      Type: BaseDataVariableType
+      DataType: UInt16
+      Value: 25
+  - Name: S1VarInt20
+    Type: ModbusTag
+    DataType: Int16
+    Value: 0
+    Children:
+    - Name: NumRegister
+      Type: BaseDataVariableType
+      DataType: UInt16
+      Value: 26

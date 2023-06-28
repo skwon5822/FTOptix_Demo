@@ -1,0 +1,463 @@
+Name: NetLogic
+Type: NetLogicCategoryFolder
+Children:
+- Name: ClockLogic
+  Type: ns=13;NetLogic
+  WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+  Children:
+  - Name: Time
+    Id: g=c53fcb7ea5b29e6e1bef47eba67d347c
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "1601-01-01T00:00:00.0000000"
+- Name: DataLogTableExport
+  Id: g=91a672ef44d1c8555f36f9727c4fe0cd
+  Type: ns=13;NetLogic
+  WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+  Children:
+  - Name: CSVPath
+    Type: BaseDataVariableType
+    DataType: AbsoluteResourceUri
+    Value: "file:///Z:/01_Projects/FTOptix/FTOptix_Demo/ProjectFiles/CSV_Exported/DataLogExported.CSV"
+  - Name: FieldDelimiter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: ","
+  - Class: Method
+    Name: Export
+  - Name: Table
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"4ebb986977c0f948e616cb44b9812017","Namespace":7}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"Id":3,"Namespace":25}
+  - Name: Query
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "SELECT * FROM"
+    Children:
+    - Name: StringFormatter1
+      Type: StringFormatter
+      Children:
+      - Name: Format
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ReferenceType: HasParameter
+        Value: {"LocaleId":"en-US","Text":"SELECT * FROM {0:sql_identifier} WHERE LocalTimestamp BETWEEN {1:sql_literal} AND {2:sql_literal}"}
+      - Name: Source0
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../Table@BrowseName"
+      - Name: ns=2;Source1
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../../../Model/CSVFromTimeStamp"
+      - Name: ns=2;Source2
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../../../Model/CSVToTimeStamp"
+  - Name: WrapFields
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+- Name: AlarmLogTableExport
+  Id: g=4df7b7031063a584dc06207f7086e479
+  Type: ns=13;NetLogic
+  WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+  Children:
+  - Name: CSVPath
+    Type: BaseDataVariableType
+    DataType: AbsoluteResourceUri
+    Value: "file:///Z:/01_Projects/FTOptix/FTOptix_Demo/ProjectFiles/CSV_Exported/AlarmLogExported.CSV"
+  - Name: FieldDelimiter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: ","
+  - Class: Method
+    Name: Export
+  - Name: Table
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"f7cf72d916638c3d59be46adb007ed23","Namespace":7}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"Id":3,"Namespace":25}
+  - Name: Query
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "SELECT * FROM"
+    Children:
+    - Name: StringFormatter1
+      Type: StringFormatter
+      Children:
+      - Name: Format
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ReferenceType: HasParameter
+        Value: {"LocaleId":"en-US","Text":"SELECT * FROM {0:sql_identifier} WHERE LocalTime BETWEEN {1:sql_literal} AND {2:sql_literal}"}
+      - Name: Source0
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../Table@BrowseName"
+      - Name: ns=2;Source1
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../../../Model/CSVFromTimeStamp"
+      - Name: ns=2;Source2
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../../../Model/CSVToTimeStamp"
+  - Name: WrapFields
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+- Name: AuditTrailTableExport
+  Id: g=0f2cc2b23e6fc35236b5bad7f4a03407
+  Type: ns=13;NetLogic
+  WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+  Children:
+  - Name: CSVPath
+    Type: BaseDataVariableType
+    DataType: AbsoluteResourceUri
+    Value: "file:///Z:/01_Projects/FTOptix/FTOptix_Demo/ProjectFiles/CSV_Exported/AuditTrailLogExported.CSV"
+  - Name: FieldDelimiter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: ","
+  - Class: Method
+    Name: Export
+  - Name: Table
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"f016da7e87aa7d2b147750435cb43a50","Namespace":7}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"Id":3,"Namespace":25}
+  - Name: Query
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "SELECT * FROM"
+    Children:
+    - Name: StringFormatter1
+      Type: StringFormatter
+      Children:
+      - Name: Format
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ReferenceType: HasParameter
+        Value: {"LocaleId":"en-US","Text":"SELECT * FROM {0:sql_identifier} WHERE LocalTimeStamp BETWEEN {1:sql_literal} AND {2:sql_literal}"}
+      - Name: Source0
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../Table@BrowseName"
+      - Name: ns=2;Source1
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../../../Model/CSVFromTimeStamp"
+      - Name: ns=2;Source2
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../../../Model/CSVToTimeStamp"
+  - Name: WrapFields
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+- Name: ASCIIToStringConv
+  Id: g=4ae871ae9c4b1f3c68bc27ec45d7ca88
+  Type: ns=13;NetLogic
+  Children:
+  - Class: Method
+    Name: ConvertIntToString
+- Name: ModbusIntToStringConv
+  Id: g=66023f54ab0f4dea151c0169811f75a3
+  Type: ns=13;NetLogic
+  Children:
+  - Class: Method
+    Name: ModbusConvertIntToString
+- Name: CurrentDateTimeFormatted
+  Type: ns=13;NetLogic
+  WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+  Children:
+  - Name: Time
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "1601-01-01T00:00:00.0000000"
+  - Name: UTCTime
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "1601-01-01T00:00:00.0000000"
+- Name: DesignTimeNetLogicGenerateMessages
+  Type: ns=13;NetLogic
+  Children:
+  - Name: BehaviourStartPriority
+    Type: BehaviourStartPriorityVariableType
+    DataType: Byte
+    Value: 180
+  - Class: Method
+    Name: GenerateMessages
+- Name: ChnageLabelText
+  Id: g=d29b4c6a534d8056b730fa43ee03a280
+  Type: ns=13;NetLogic
+  Children:
+  - Class: Method
+    Name: ChangeText
+    Children:
+    - Name: ns=0;InputArguments
+      Type: BaseVariableType
+      DataType: Argument
+      ReferenceType: HasProperty
+      ValueRank: OneDimension
+      ArrayDimensions: [0]
+      Value: [{"TypeId":{"Id":296},"Body":{"Name":"labelNodeId","DataType":{"Id":17},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"InputText","DataType":{"Id":17},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+- Name: VarCopyScript
+  Id: g=22ec539b6e7319243099b27e6165a7cc
+  Type: ns=13;NetLogic
+  Children:
+  - Class: Method
+    Name: CopyVar
+- Name: PeriodicExecutionScriptToCopyVar
+  Type: ns=13;NetLogic
+- Name: CheckPasswordStrength
+  Id: g=f1fa40a5c203fff112e2430e8e26a26b
+  Type: ns=13;NetLogic
+  Children:
+  - Class: Method
+    Name: CheckPassword
+    Children:
+    - Name: ns=0;InputArguments
+      Type: BaseVariableType
+      DataType: Argument
+      ReferenceType: HasProperty
+      ValueRank: OneDimension
+      ArrayDimensions: [0]
+      Value: [{"TypeId":{"Id":296},"Body":{"Name":"PassTextBox","DataType":{"Id":17},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"ApplyButton","DataType":{"Id":17},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+- Name: StringToASCIIConv
+  Id: g=19d3211d2b25b55afaf01528560e2fe5
+  Type: ns=13;NetLogic
+  Children:
+  - Class: Method
+    Name: ConvertStringToInt
+- Name: CreateNewUserAuditLog
+  Type: ns=13;NetLogic
+  Children:
+  - Class: Method
+    Name: Insert
+    Children:
+    - Name: ns=0;InputArguments
+      Type: BaseVariableType
+      DataType: Argument
+      ReferenceType: HasProperty
+      ValueRank: OneDimension
+      ArrayDimensions: [0]
+      Value: [{"TypeId":{"Id":296},"Body":{"Name":"username","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"currentuser","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+- Name: CheckInternalVar
+  Id: g=a6f9ef2e5ad154934676f21d88b9b4cc
+  Type: ns=13;NetLogic
+  Children:
+  - Name: InputText
+    Id: g=4d6889ad607432249a909986fa8ef450
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Class: Method
+    Name: Check
+    Children:
+    - Name: ns=0;InputArguments
+      Type: BaseVariableType
+      DataType: Argument
+      ReferenceType: HasProperty
+      ValueRank: OneDimension
+      ArrayDimensions: [0]
+      Value: [{"TypeId":{"Id":296},"Body":{"Name":"textbox1","DataType":{"Id":17},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+- Name: ReadDataFromEmbDatabase
+  Id: g=1d27d6aa6ce923041a28a90a03b5f91a
+  Type: ns=13;NetLogic
+  Children:
+  - Class: Method
+    Name: ReadData
+    Children:
+    - Name: ns=0;InputArguments
+      Type: BaseVariableType
+      DataType: Argument
+      ReferenceType: HasProperty
+      ValueRank: OneDimension
+      ArrayDimensions: [0]
+      Value: [{"TypeId":{"Id":296},"Body":{"Name":"SetSQLQuery","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+- Name: GetAlarmOccurances
+  Id: g=8f5cfc4f18d49a4624edf0a8960df67f
+  Type: ns=13;NetLogic
+  Children:
+  - Class: Method
+    Name: GetOccurances
+    Children:
+    - Name: ns=0;InputArguments
+      Type: BaseVariableType
+      DataType: Argument
+      ReferenceType: HasProperty
+      ValueRank: OneDimension
+      ArrayDimensions: [0]
+      Value: [{"TypeId":{"Id":296},"Body":{"Name":"SetSQLQuery","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+- Name: EmailSenderLogic
+  Id: g=ad7d4329f7986eadfcba020557eab77c
+  Type: ns=13;NetLogic
+  WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+  Children:
+  - Class: Method
+    Name: SendEmail
+    ReferenceType: HasComponent
+    Children:
+    - Name: ns=0;InputArguments
+      Type: BaseVariableType
+      DataType: Argument
+      ReferenceType: HasProperty
+      ValueRank: OneDimension
+      ArrayDimensions: [0]
+      Value: [{"TypeId":{"Id":296},"Body":{"Name":"mailToAddress","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"mailToAddress2","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"mailToAddress3","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"mailCcAddress1","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"mailCcAddress2","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"mailCcAddress3","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"mailSubject","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"mailBody","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+  - Name: SenderEmailAddress
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "ftoptixnotifications@gmail.com"
+  - Name: SenderEmailPassword
+    Type: BaseDataVariableType
+    DataType: Password
+    Value: "pfjqjrtktsxgikfi"
+  - Name: SMTPHostname
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "smtp.gmail.com"
+  - Name: SMTPPort
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 587
+  - Name: EnableSSL
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: Attachment
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "file:///Z:/01_Projects/FTOptix/FTOptix_Demo/ProjectFiles/PDFReports/DataLogReport.pdf"
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/Email/EmailAttachmentPath"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: Attachment2
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "file:///Z:/01_Projects/FTOptix/FTOptix_Demo/ProjectFiles/PDFReports/DataLogReport.pdf"
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/Email/EmailAttachmentPath2"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: Attachment3
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "file:///Z:/01_Projects/FTOptix/FTOptix_Demo/ProjectFiles/PDFReports/DataLogReport.pdf"
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/Email/EmailAttachmentPath3"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: MaxRetriesOnFailure
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: DelayBeforeRetry
+    Type: BaseDataVariableType
+    DataType: Duration
+    Value: "0:00:00:10.0000000"
+  - Name: EmailSendingStatus
+    Id: g=2f37e3dcc2778d50dc83e55e881000a4
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+- Name: EmailAutoSendAtPresetTime
+  Type: ns=13;NetLogic
+- Name: PrintPdfFile
+  Id: g=c166a3990d5e299ce7da51272e59ac1f
+  Type: ns=13;NetLogic
+  WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+  Children:
+  - Name: FoxitReaderPath
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "C:\\Program Files (x86)\\Foxit Software\\Foxit PDF Reader\\FoxitPDFReader.exe"
+  - Class: Method
+    Name: PrintPdf
+    Children:
+    - Name: ns=0;InputArguments
+      Type: BaseVariableType
+      DataType: Argument
+      ReferenceType: HasProperty
+      ValueRank: OneDimension
+      ArrayDimensions: [0]
+      Value: [{"TypeId":{"Id":296},"Body":{"Name":"pdfFile","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]

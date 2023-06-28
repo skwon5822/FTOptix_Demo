@@ -1,0 +1,25 @@
+Name: ChartVars
+Id: g=78430db5589222b2095b284698a931a3
+Type: FolderType
+Children:
+- Name: Group1Counts
+  Id: g=54bca967ef38847141943770fcde61ac
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: Group2Counts
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: Group3Counts
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: Group4Counts
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: Group5Counts
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0

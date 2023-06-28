@@ -1,0 +1,77 @@
+Name: SQLQuery
+Type: FolderType
+Children:
+- Name: QueryFromDateTime
+  Id: g=9114ca444d7790fcd4a83b507f1aa214
+  Type: BaseDataVariableType
+  DataType: DateTime
+  Value: "2023-03-07T00:00:00.0000000"
+- Name: QueryToDateTime
+  Id: g=3d93483abdc65b7ffd8a14688b9c8ca0
+  Type: BaseDataVariableType
+  DataType: DateTime
+  Value: "2023-03-07T22:00:00.0000000"
+- Name: AuditColumn
+  Id: g=d313803b2082a8f1df5ef3aa2e985044
+  Type: BaseObjectType
+  Children:
+  - Name: ClientUserId
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: SecondClientUserId
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: SourceName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+- Name: CompOpterator
+  Id: g=6ac5a191b1002ca0651348b87e2393c2
+  Type: BaseObjectType
+  Children:
+  - Name: LIKE
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: =
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+- Name: QueryColumText
+  Id: g=c07be7c326329e6f1cd7af1bde6deaec
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "opt1"
+- Name: QueryfromValue
+  Id: g=771f59f7c82087d911054fb58b8b7a94
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+- Name: QuerytoValue
+  Id: g=b056a71cdae3bf95c0dab897d998c535
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+- Name: DataLogVars
+  Id: g=259c9f93f1976469f4cfacf440702f95
+  Type: BaseObjectType
+  Children:
+  - Name: BatchName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: Speed
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: Humidity
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+- Name: QueryValue
+  Id: g=fc654273cb8a606f521215770ffd7aa7
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "Batch_101"

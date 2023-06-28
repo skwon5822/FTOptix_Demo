@@ -1,0 +1,278 @@
+Name: Email
+Type: FolderType
+Children:
+- Name: SendEmail
+  Id: g=252a1ae38d891f03c5dc486109fb83eb
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false
+- Name: AutoEmailTime
+  Id: g=1aeea4de27302ebbee9be862a98b3aac
+  Type: BaseDataVariableType
+  DataType: DateTime
+  Value: "1601-01-01T12:00:00.0000000"
+- Name: EmailAttachmentPath
+  Id: g=e35c9b4e68b72080bcd81a0e867bbcf4
+  Type: BaseDataVariableType
+  DataType: ResourceUri
+  Value: "file:///Z:/01_Projects/FTOptix/FTOptix_Demo/ProjectFiles/PDFReports/DataLogReport.pdf"
+- Name: EmailAttachmentPath2
+  Id: g=db069889b40cbe763b9416788fed512f
+  Type: BaseDataVariableType
+  DataType: ResourceUri
+  Value: "file:///Z:/01_Projects/FTOptix/FTOptix_Demo/ProjectFiles/PDFReports/BatchReport.pdf"
+- Name: EmailAttachmentPath3
+  Id: g=e81d5796604c87fa14686d367124b9be
+  Type: BaseDataVariableType
+  DataType: ResourceUri
+  Value: "file:///Z:/01_Projects/FTOptix/FTOptix_Demo/ProjectFiles/PDFReports/AlarmLogReport.pdf"
+- Name: ToEmailAddress1
+  Id: g=d004cb84450b7fdb6668d901d9b95d36
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "mayur.ranipa@ymail.com"
+- Name: ToEmailAddress2
+  Id: g=6d999061483cd7f7c4e06021d82fc914
+  Type: BaseDataVariableType
+  DataType: String
+  Value: ""
+- Name: ToEmailAddress3
+  Id: g=aca94ded152173f3e39add45c162d740
+  Type: BaseDataVariableType
+  DataType: String
+  Value: ""
+- Name: CcEmailAddress1
+  Id: g=74573e879c7ed7567a0882895bb8cdde
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "mayur.ranipa@rockwellautomation.com"
+- Name: CcEmailAddress2
+  Id: g=146866686603613137047b73f9cc82b5
+  Type: BaseDataVariableType
+  DataType: String
+  Value: ""
+- Name: CcEmailAddress3
+  Id: g=51ada0a4695135830f5c262a8f275560
+  Type: BaseDataVariableType
+  DataType: String
+  Value: ""
+- Name: EmailSubject
+  Id: g=d3395da8c463a59d67654869e21d765e
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "FT Optix Reports Notification"
+- Name: EmailBody
+  Id: g=e0c4e53d4e92e18cc733f62ee504e5e9
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "Dear FT Optix User,\n\nPlease find attached herewith the reports in PDF format.\n\nRegards,\nFT Optix Notifier"
+- Name: SendEmailTransitioned
+  Type: VariableTransitionEventDispatcher
+  Children:
+  - Name: Value
+    Type: BaseVariableType
+    DataType: Double
+    Value: 1.0
+  - Name: Transition
+    Type: BaseVariableType
+    DataType: VariableTransition
+    Value: 0
+  - Name: VariableNodePath
+    Type: BaseVariableType
+    DataType: NodePath
+    Value: "../SendEmail"
+  - Name: VariableTransitionEventHandler1
+    Type: EventHandler
+    Children:
+    - Name: ListenEventType
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"Id":108,"Namespace":2}
+    - Name: MethodsToCall
+      Type: BaseObjectType
+      Children:
+      - Name: MethodContainer1
+        Type: BaseObjectType
+        Children:
+        - Name: ns=2;ObjectPointer
+          Type: NodePointer
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: {"Id":58}
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../../NetLogic/EmailSenderLogic@NodeId"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              Value: 2
+        - Name: ns=2;Method
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "SendEmail"
+        - Name: InputArguments
+          Type: BaseObjectType
+          Children:
+          - Name: mailToAddress
+            Type: BaseDataVariableType
+            DataType: String
+            Value: ""
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../../../ToEmailAddress1"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                Value: 2
+          - Name: mailToAddress2
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "../../../../../../ToEmailAddress1"
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../../../ToEmailAddress2"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                Value: 2
+          - Name: mailToAddress3
+            Type: BaseDataVariableType
+            DataType: String
+            Value: ""
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../../../ToEmailAddress3"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                Value: 2
+          - Name: mailCcAddress1
+            Type: BaseDataVariableType
+            DataType: String
+            Value: ""
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../../../CcEmailAddress1"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                Value: 2
+          - Name: mailCcAddress2
+            Type: BaseDataVariableType
+            DataType: String
+            Value: ""
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../../../CcEmailAddress2"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                Value: 2
+          - Name: mailCcAddress3
+            Type: BaseDataVariableType
+            DataType: String
+            Value: ""
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../../../CcEmailAddress3"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                Value: 2
+          - Name: mailSubject
+            Type: BaseDataVariableType
+            DataType: String
+            Value: ""
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../../../EmailSubject"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                Value: 2
+          - Name: mailBody
+            Type: BaseDataVariableType
+            DataType: String
+            Value: ""
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../../../EmailBody"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                Value: 2
+    - Name: EventArguments
+      Type: VariableTransitionEvent
+      Children:
+      - Name: VariableNodeId
+        Type: BaseVariableType
+        DataType: NodeId
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+      - Name: NewValue
+        Type: BaseVariableType
+        DataType: BaseDataType
+      - Name: OldValue
+        Type: BaseVariableType
+        DataType: BaseDataType
+      - Name: EventId
+        Type: PropertyType
+        DataType: ByteString
+        Value: ""
+      - Name: EventType
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+      - Name: SourceNode
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+      - Name: SourceName
+        Type: PropertyType
+        DataType: String
+        Value: ""
+      - Name: Time
+        Type: PropertyType
+        DataType: UtcTime
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: ReceiveTime
+        Type: PropertyType
+        DataType: UtcTime
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: Message
+        Type: PropertyType
+        DataType: LocalizedText
+        Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+      - Name: Severity
+        Type: PropertyType
+        DataType: UInt16
+        Value: 0

@@ -1,0 +1,34 @@
+Name: Recipe
+Id: g=7aa5a24c6880937e5e2cc18b353d4cbe
+Type: FolderType
+Children:
+- Name: RecSetSpeed
+  Id: g=c80a7c916ff78fc6a1fbd12e787ded6d
+  Type: BaseDataVariableType
+  DataType: Int16
+  Value: 0
+- Name: RecAutoMode
+  Id: g=20a945ba268ffbd58179ace29b2529bc
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false
+- Name: RecSetTemp
+  Id: g=c7e697f04a0be4e2348980cc93c77086
+  Type: BaseDataVariableType
+  DataType: UInt32
+  Value: 0
+- Name: RecSpeedFactor
+  Id: g=0e07f7ff0aa9b503d33991781d047bae
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+- Name: RecProdName
+  Id: g=dc66d4c553064d2ce253f30ea8a5ed1f
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "0"
+- Name: RecipeExportImportPath
+  Id: g=686644654da1c9d7c148914adde8bae7
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "Z:\\01_Projects\\FTOptix\\FTOptix_Demo\\ProjectFiles\\RecipeExported\\ExportedRecipe.CSV"

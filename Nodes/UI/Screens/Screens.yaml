@@ -1,0 +1,13 @@
+Name: Screens
+Type: FolderType
+Children:
+- File: 01MachineControl/01MachineControl.yaml
+- File: 02DataLogging/02DataLogging.yaml
+- File: 03Alarms/03Alarms.yaml
+- File: 04Recipe/04Recipe.yaml
+- File: 05UserManagement/05UserManagement.yaml
+- File: 06Communication/06Communication.yaml
+- File: 07AuditTrail/07AuditTrail.yaml
+- File: 08Reports/08Reports.yaml
+- File: 09DatabaseOperation/09DatabaseOperation.yaml
+- File: 10NetLogic/10NetLogic.yaml

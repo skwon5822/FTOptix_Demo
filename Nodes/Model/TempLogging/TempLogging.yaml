@@ -1,0 +1,46 @@
+Name: TempLogging
+Type: FolderType
+Children:
+- File: ChartVars/ChartVars.yaml
+- Name: FromValueGroup1
+  Id: g=f64ebfb2c482b8cd94ebe974fcf614b5
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: -5.0
+- Name: FromValueGroup2
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: -2.0
+- Name: FromValueGroup3
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: -0.5
+- Name: FromValueGroup4
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.5
+- Name: FromValueGroup5
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 2.0
+- Name: ToValueGroup1
+  Id: g=29539fbc9261656cfbfeb72ac55d594e
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: -2.0
+- Name: ToValueGroup2
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: -0.5
+- Name: ToValueGroup3
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.5
+- Name: ToValueGroup4
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 2.0
+- Name: ToValueGroup5
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 5.0

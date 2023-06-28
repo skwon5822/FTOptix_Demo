@@ -1,0 +1,788 @@
+Name: DataStores
+Type: DataStoresCategoryFolder
+Children:
+- Name: EDB_AuditTrail
+  Id: g=d40b8ed67577983275a6fb5d89d34535
+  Type: SQLiteStore
+  Children:
+  - Name: Tables
+    Type: BaseObjectType
+    Children:
+    - Name: SigningEventLogger
+      Id: g=f016da7e87aa7d2b147750435cb43a50
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=25;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=25;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=25;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=25;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: LocalTimeStamp
+          Type: StoreColumn
+          DataType: DateTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: SourceName
+          Type: StoreColumn
+          DataType: String
+          Value: ""
+        - Name: Message
+          Type: StoreColumn
+          DataType: String
+          Value: ""
+        - Name: ClientUserId
+          Type: StoreColumn
+          DataType: String
+          Value: ""
+        - Name: ClientUserNote
+          Type: StoreColumn
+          DataType: String
+          Value: ""
+        - Name: SecondClientUserId
+          Type: StoreColumn
+          DataType: String
+          Value: ""
+        - Name: SecondClientUserNote
+          Type: StoreColumn
+          DataType: String
+          Value: ""
+        - Name: EventType
+          Type: StoreColumn
+          DataType: String
+          Value: ""
+  - Class: Reference
+    Target: ns=28;i=30
+    Direction: Forward
+  - Class: Reference
+    Target: ns=28;i=33
+    Direction: Forward
+  - Name: MaxColumnNameLength
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+    Value: 0
+  - Name: MaxColumnCount
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+    Value: 0
+  - Name: DataTypeCompatibilityMap
+    Type: BaseDataVariableType
+    DataType: NodeId
+    AccessLevel: Read
+    ValueRank: OneOrMoreDimensions
+    ArrayDimensions: [0,0]
+    Value: {"Type":17,"Dimensions":[0,0],"Body":[]}
+  - Name: Status
+    Type: PropertyType
+    DataType: StoreStatus
+    AccessLevel: Read
+    Value: 2
+  - Class: Reference
+    Target: ns=25;i=22
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=6
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=8
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=25
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=38
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=41
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=44
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=53
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=55
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=57
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=59
+    Direction: Forward
+- Name: EDB_AlarmLogging
+  Id: g=6c65a62033a292f14f7073f40a38ba38
+  Type: SQLiteStore
+  Children:
+  - Name: Tables
+    Type: BaseObjectType
+    Children:
+    - Name: AlarmsEventLogger1
+      Id: g=f7cf72d916638c3d59be46adb007ed23
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=25;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=25;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=25;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=25;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: ActiveState_Id
+          Type: StoreColumn
+          DataType: Boolean
+          Value: false
+        - Name: AckedState_Id
+          Type: StoreColumn
+          DataType: Boolean
+          Value: false
+        - Name: ConfirmedState_Id
+          Type: StoreColumn
+          DataType: Boolean
+          Value: false
+        - Name: ConditionName
+          Type: StoreColumn
+          DataType: String
+          Value: ""
+        - Name: EnabledState_Id
+          Type: StoreColumn
+          DataType: Boolean
+          Value: false
+        - Name: SourceName
+          Type: StoreColumn
+          DataType: String
+          Value: ""
+        - Name: Time
+          Type: StoreColumn
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: 'Message_en-US'
+          Type: StoreColumn
+          DataType: String
+          Value: ""
+        - Name: Severity
+          Type: StoreColumn
+          DataType: UInt16
+          Value: 0
+        - Name: LocalTime
+          Type: StoreColumn
+          DataType: DateTime
+          Value: "1601-01-01T00:00:00.0000000"
+  - Class: Reference
+    Target: ns=28;i=30
+    Direction: Forward
+  - Class: Reference
+    Target: ns=28;i=33
+    Direction: Forward
+  - Name: MaxColumnNameLength
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+    Value: 0
+  - Name: MaxColumnCount
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+    Value: 0
+  - Name: DataTypeCompatibilityMap
+    Type: BaseDataVariableType
+    DataType: NodeId
+    AccessLevel: Read
+    ValueRank: OneOrMoreDimensions
+    ArrayDimensions: [0,0]
+    Value: {"Type":17,"Dimensions":[0,0],"Body":[]}
+  - Name: Status
+    Type: PropertyType
+    DataType: StoreStatus
+    AccessLevel: Read
+    Value: 2
+  - Class: Reference
+    Target: ns=25;i=22
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=6
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=8
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=25
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=38
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=41
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=44
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=53
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=55
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=57
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=59
+    Direction: Forward
+- Name: EDB_DataLogging
+  Id: g=fb8838ce9533c1a269f86c0480ef8767
+  Type: SQLiteStore
+  Children:
+  - Name: Tables
+    Type: BaseObjectType
+    Children:
+    - Name: DataLogging
+      Id: g=4ebb986977c0f948e616cb44b9812017
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=25;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=25;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=25;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=25;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: Speed
+          Type: StoreColumn
+          DataType: Int32
+          Value: 0
+        - Name: Temperature
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: Humidity
+          Type: StoreColumn
+          DataType: Int32
+          Value: 0
+        - Name: Pressure
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: BatchName
+          Type: StoreColumn
+          DataType: String
+          Value: ""
+  - Class: Reference
+    Target: ns=28;i=30
+    Direction: Forward
+  - Class: Reference
+    Target: ns=28;i=33
+    Direction: Forward
+  - Name: MaxColumnNameLength
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+    Value: 0
+  - Name: MaxColumnCount
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+    Value: 0
+  - Name: DataTypeCompatibilityMap
+    Type: BaseDataVariableType
+    DataType: NodeId
+    AccessLevel: Read
+    ValueRank: OneOrMoreDimensions
+    ArrayDimensions: [0,0]
+    Value: {"Type":17,"Dimensions":[0,0],"Body":[]}
+  - Name: Status
+    Type: PropertyType
+    DataType: StoreStatus
+    AccessLevel: Read
+    Value: 2
+  - Class: Reference
+    Target: ns=25;i=22
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=6
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=8
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=25
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=38
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=41
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=44
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=53
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=55
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=57
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=59
+    Direction: Forward
+- Name: EDB_Recipe
+  Id: g=52e781502564223eb8c9f71ff84b85e9
+  Type: SQLiteStore
+  Children:
+  - Name: Tables
+    Type: BaseObjectType
+    Children:
+    - Name: Recipe_Table
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=25;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=25;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=25;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=25;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Name
+          Type: StoreColumn
+          DataType: String
+          Value: ""
+        - Name: /RecSetSpeed
+          Type: StoreColumn
+          DataType: Int16
+          Value: 0
+        - Name: /RecAutoMode
+          Type: StoreColumn
+          DataType: Boolean
+          Value: false
+        - Name: /RecSetTemp
+          Type: StoreColumn
+          DataType: UInt32
+          Value: 0
+        - Name: /RecSpeedFactor
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: /RecProdName
+          Type: StoreColumn
+          DataType: String
+          Value: ""
+  - Class: Reference
+    Target: ns=28;i=30
+    Direction: Forward
+  - Class: Reference
+    Target: ns=28;i=33
+    Direction: Forward
+  - Name: MaxColumnNameLength
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+    Value: 0
+  - Name: MaxColumnCount
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+    Value: 0
+  - Name: DataTypeCompatibilityMap
+    Type: BaseDataVariableType
+    DataType: NodeId
+    AccessLevel: Read
+    ValueRank: OneOrMoreDimensions
+    ArrayDimensions: [0,0]
+    Value: {"Type":17,"Dimensions":[0,0],"Body":[]}
+  - Name: Status
+    Type: PropertyType
+    DataType: StoreStatus
+    AccessLevel: Read
+    Value: 2
+  - Class: Reference
+    Target: ns=25;i=22
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=6
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=8
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=25
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=38
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=41
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=44
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=53
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=55
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=57
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=59
+    Direction: Forward
+  - Name: InMemory
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: Filename
+    Type: BaseDataVariableType
+    DataType: String
+    Value: ""
+- Name: EDB_BatchEvents
+  Id: g=5223e249b16a4a2698b818dbd223447e
+  Type: SQLiteStore
+  Children:
+  - Name: Tables
+    Type: BaseObjectType
+    Children:
+    - Name: BatchEventLogger
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=25;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=25;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=25;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=25;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: BatchEventMessage
+          Type: StoreColumn
+          DataType: String
+          Value: ""
+  - Class: Reference
+    Target: ns=28;i=30
+    Direction: Forward
+  - Class: Reference
+    Target: ns=28;i=33
+    Direction: Forward
+  - Name: MaxColumnNameLength
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+    Value: 0
+  - Name: MaxColumnCount
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+    Value: 0
+  - Name: DataTypeCompatibilityMap
+    Type: BaseDataVariableType
+    DataType: NodeId
+    AccessLevel: Read
+    ValueRank: OneOrMoreDimensions
+    ArrayDimensions: [0,0]
+    Value: {"Type":17,"Dimensions":[0,0],"Body":[]}
+  - Name: Status
+    Type: PropertyType
+    DataType: StoreStatus
+    AccessLevel: Read
+    Value: 2
+  - Class: Reference
+    Target: ns=25;i=22
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=6
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=8
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=25
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=38
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=41
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=44
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=53
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=55
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=57
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=59
+    Direction: Forward
+- Name: EDB_TempLogger
+  Id: g=bc235212ad3a973e1094179714a7b12a
+  Type: SQLiteStore
+  Children:
+  - Name: Tables
+    Type: BaseObjectType
+    Children:
+    - Name: TempLogger
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=25;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=25;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=25;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=25;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: SetTemperature
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: ActualTemperature
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: TemperatureDeviation
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+  - Class: Reference
+    Target: ns=28;i=30
+    Direction: Forward
+  - Class: Reference
+    Target: ns=28;i=33
+    Direction: Forward
+  - Name: MaxColumnNameLength
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+    Value: 0
+  - Name: MaxColumnCount
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+    Value: 0
+  - Name: DataTypeCompatibilityMap
+    Type: BaseDataVariableType
+    DataType: NodeId
+    AccessLevel: Read
+    ValueRank: OneOrMoreDimensions
+    ArrayDimensions: [0,0]
+    Value: {"Type":17,"Dimensions":[0,0],"Body":[]}
+  - Name: Status
+    Type: PropertyType
+    DataType: StoreStatus
+    AccessLevel: Read
+    Value: 2
+  - Class: Reference
+    Target: ns=25;i=22
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=6
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=8
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=25
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=38
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=41
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=44
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=53
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=55
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=57
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=59
+    Direction: Forward
+- Name: EDB_SystemEventLog
+  Id: g=d0d4ef71a0d96b75d62b4fa8210ae2d8
+  Type: SQLiteStore
+  Children:
+  - Name: Tables
+    Type: BaseObjectType
+    Children:
+    - Name: RuntimeEventsLogger
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=25;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=25;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=25;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=25;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: ErrorCode
+          Type: StoreColumn
+          DataType: UInt16
+          Value: 0
+        - Name: 'Message_en-US'
+          Type: StoreColumn
+          DataType: String
+          Value: ""
+        - Name: ModuleName
+          Type: StoreColumn
+          DataType: String
+          Value: ""
+  - Class: Reference
+    Target: ns=28;i=30
+    Direction: Forward
+  - Class: Reference
+    Target: ns=28;i=33
+    Direction: Forward
+  - Name: MaxColumnNameLength
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+    Value: 0
+  - Name: MaxColumnCount
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+    Value: 0
+  - Name: DataTypeCompatibilityMap
+    Type: BaseDataVariableType
+    DataType: NodeId
+    AccessLevel: Read
+    ValueRank: OneOrMoreDimensions
+    ArrayDimensions: [0,0]
+    Value: {"Type":17,"Dimensions":[0,0],"Body":[]}
+  - Name: Status
+    Type: PropertyType
+    DataType: StoreStatus
+    AccessLevel: Read
+    Value: 2
+  - Class: Reference
+    Target: ns=25;i=22
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=6
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=8
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=25
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=38
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=41
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=44
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=53
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=55
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=57
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=59
+    Direction: Forward

@@ -1,0 +1,356 @@
+Name: Model
+Type: ModelCategoryFolder
+Children:
+- File: AuditTrail/AuditTrail.yaml
+- File: SQLQuery/SQLQuery.yaml
+- File: Alarms/Alarms.yaml
+- File: Recipe/Recipe.yaml
+- File: Report/Report.yaml
+- File: BatchReport/BatchReport.yaml
+- File: Trend/Trend.yaml
+- File: ModbusString/ModbusString.yaml
+- File: DateTime/DateTime.yaml
+- File: NetLogic/NetLogic.yaml
+- File: TempLogging/TempLogging.yaml
+- File: Email/Email.yaml
+- Name: ReportScrSelection
+  Id: g=a0392a721fcba29a63592594c025bc09
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: CSVFromTimeStamp
+  Id: g=cbf8f2bb37fa5a477557bf08ecd0196c
+  Type: BaseDataVariableType
+  DataType: DateTime
+  Value: "2023-02-03T09:00:00.0000000"
+- Name: CSVToTimeStamp
+  Id: g=aa8f6d46315fae0185ed15d3e8d11ee9
+  Type: BaseDataVariableType
+  DataType: DateTime
+  Value: "2023-02-03T20:00:00.0000000"
+- Name: OutString
+  Id: g=ffe108bbee2b74f2c252515cf363a63a
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "0"
+- Name: InpString
+  Id: g=7ee6236c3b66eba8255433b54a0ea87d
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "FT-Op"
+- Name: OutIntArray
+  Id: g=b99c7b40dbdd0c9938b4ba72c80cbebe
+  Type: BaseDataVariableType
+  DataType: Int16
+  ValueRank: OneDimension
+  ArrayDimensions: [20]
+  Value: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+- Name: InInt1
+  Id: g=46d9ff97720e46ec77db3d4736d7907f
+  Type: BaseDataVariableType
+  DataType: Int16
+  Value: 70
+- Name: InInt2
+  Id: g=2735c4d5a3386d6aea24f0200bc6923c
+  Type: BaseDataVariableType
+  DataType: Int16
+  Value: 84
+- Name: InInt3
+  Id: g=fcaed601a327632909c75f7303ccee70
+  Type: BaseDataVariableType
+  DataType: Int16
+  Value: 45
+- Name: InInt4
+  Id: g=2ac5c24fc3dc47f494659f0eeccb5a38
+  Type: BaseDataVariableType
+  DataType: Int16
+  Value: 79
+- Name: InInt5
+  Id: g=ade6bafec85290ae4cf4f555f20fcc39
+  Type: BaseDataVariableType
+  DataType: Int16
+  Value: 112
+- Name: TempDevValue
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+- Name: MyMotorType
+  Id: g=cd8dd46d91b505e4262f1e9ed4406dd0
+  Supertype: BaseObjectType
+  Children:
+  - Name: MotorStart
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: MotorSpeed
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+- Name: MyMotor1
+  Id: g=820c78d93fa9d809d41cb310a424844a
+  Type: MyMotorType
+  Children:
+  - Name: MotorStart
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: MotorSpeed
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+- Name: MyMotor2
+  Id: g=820d70443eff1efc1396c0b80cc1817f
+  Type: MyMotorType
+  Children:
+  - Name: MotorStart
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: MotorSpeed
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+- Name: MyMotor3
+  Type: MyMotorType
+  Children:
+  - Name: MotorStart
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: MotorSpeed
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+- Name: MyMotor4
+  Id: g=27168a312c00df03646159315a3569a0
+  Type: MyMotorType
+  Children:
+  - Name: MotorStart
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: MotorSpeed
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+- Name: MyMotor5
+  Id: g=52de99e99c3f5652ebfeed6483d1502e
+  Type: MyMotorType
+  Children:
+  - Name: MotorStart
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: MotorSpeed
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+- Name: SetLocale
+  Id: g=4ccecd240581c7a4ed05582ba6d4d407
+  Type: BaseObjectType
+  Children:
+  - Name: 'en-US'
+    Id: g=76ecab61110a5157dacc40a079a07e62
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: 'en-AG'
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: 'en-AU'
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: 'en-BW'
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: 'en-CA'
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: 'en-DK'
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: 'en-GB'
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: 'en-HK'
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: 'en-IE'
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: 'en-IL'
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: 'en-IN'
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: 'en-NG'
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: 'en-NZ'
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: 'en-PH'
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: 'en-SG'
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: 'en-ZA'
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: 'en-ZM'
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+- Name: ConveyorID
+  Id: g=161bb2824b7501bf8ad8adfed27830a9
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "Front"
+- Name: MyConveyorType
+  Id: g=3e704a812d1596d2b49a2202afd14914
+  Supertype: BaseObjectType
+  Children:
+  - Name: StartConv
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Speed
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Length
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: GearRatio
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: CorrectionFactor
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+- Name: ConveyorFront
+  Type: MyConveyorType
+  Children:
+  - Name: StartConv
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Speed
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 50
+  - Name: Length
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 150.0
+  - Name: GearRatio
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 5.0
+  - Name: CorrectionFactor
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 1.5
+- Name: ConveyorBack
+  Type: MyConveyorType
+  Children:
+  - Name: StartConv
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Speed
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 60
+  - Name: Length
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 160.0
+  - Name: GearRatio
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 10.0
+  - Name: CorrectionFactor
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 2.5
+- Name: ConveyorLHS
+  Type: MyConveyorType
+  Children:
+  - Name: StartConv
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Speed
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 30
+  - Name: Length
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 50.0
+  - Name: GearRatio
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 15.0
+  - Name: CorrectionFactor
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 3.5
+- Name: ConveyorRHS
+  Type: MyConveyorType
+  Children:
+  - Name: StartConv
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Speed
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 40
+  - Name: Length
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 60.0
+  - Name: GearRatio
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 20.0
+  - Name: CorrectionFactor
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 4.5
+- Name: EnableFullScreen
+  Id: g=e5be2b3705428c37dea16d9a049fa199
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false
+- Name: EnableAlwaysOnTop
+  Id: g=b9504569c2b7a89b4274fe1fda2f539d
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false
+- Name: PickedDate
+  Id: g=77d95a45986a0cf12b10f17f657125a1
+  Type: BaseDataVariableType
+  DataType: DateTime
+  Value: "2023-03-23T00:00:00.0000000"

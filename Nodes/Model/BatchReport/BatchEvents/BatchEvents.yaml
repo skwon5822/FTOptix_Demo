@@ -1,0 +1,41 @@
+Name: BatchEvents
+Id: g=a2d0f7fdc8716e56d4b4aa0d1a2ece77
+Type: FolderType
+Children:
+- Name: None
+  Type: BaseDataVariableType
+  DataType: LocalizedText
+  Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+- Name: Batch Started
+  Id: g=0b19e9f8d70c6ffedce083172ccd097f
+  Type: BaseDataVariableType
+  DataType: LocalizedText
+  Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+- Name: Tmperature out of range
+  Type: BaseDataVariableType
+  DataType: LocalizedText
+  Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+- Name: Pressure out of range
+  Type: BaseDataVariableType
+  DataType: LocalizedText
+  Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+- Name: Nitrogen purging started
+  Type: BaseDataVariableType
+  DataType: LocalizedText
+  Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+- Name: Nitrogen purging stopped
+  Type: BaseDataVariableType
+  DataType: LocalizedText
+  Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+- Name: Infeed Jammed
+  Type: BaseDataVariableType
+  DataType: LocalizedText
+  Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+- Name: Outfeed Jammed
+  Type: BaseDataVariableType
+  DataType: LocalizedText
+  Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+- Name: Batch Completed
+  Type: BaseDataVariableType
+  DataType: LocalizedText
+  Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}

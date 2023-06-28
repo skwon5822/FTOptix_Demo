@@ -1,0 +1,35 @@
+Name: Report
+Id: g=8a224a0eb516a77a5daae85302bbcf83
+Type: FolderType
+Children:
+- File: PDFViewerZoomMode/PDFViewerZoomMode.yaml
+- Name: DataLogReportPath
+  Id: g=4c370c77bc2c85d784d16adbfc63383c
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "Z:\\01_Projects\\FTOptix\\FTOptix_Demo\\ProjectFiles\\PDFReports\\DataLogReport.pdf"
+- Name: AlarmLogReportPath
+  Id: g=270204b54ae43ef979af4c6561ffde9d
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "Z:\\01_Projects\\FTOptix\\FTOptix_Demo\\ProjectFiles\\PDFReports\\AlarmLogReport.pdf"
+- Name: AuditTrailReportPath
+  Id: g=16f07356c0ee9fd4df10148cf76b0df1
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "Z:\\01_Projects\\FTOptix\\FTOptix_Demo\\ProjectFiles\\PDFReports\\AuditTrailReport.pdf"
+- Name: BatchReportPath
+  Id: g=ad2fb8cdd705f650029c700786f40481
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "Z:\\01_Projects\\FTOptix\\FTOptix_Demo\\ProjectFiles\\PDFReports\\BatchReport.pdf"
+- Name: RepFromTimestamp
+  Id: g=f443531e4982772bbd3c9fc710100d6c
+  Type: BaseDataVariableType
+  DataType: DateTime
+  Value: "2023-03-07T09:00:00.0000000"
+- Name: RepToTimestamp
+  Id: g=95fb1a0d220dfc4a9ec814710eec5ca9
+  Type: BaseDataVariableType
+  DataType: DateTime
+  Value: "2023-03-07T20:00:00.0000000"

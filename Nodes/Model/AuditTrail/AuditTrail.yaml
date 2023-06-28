@@ -1,0 +1,93 @@
+Name: AuditTrail
+Type: FolderType
+Children:
+- Name: MachineSetSpeed
+  Id: g=b7d3a8847216af21c7f3e47adb98f869
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 10
+  Children:
+  - Name: AuditSigning Signature
+    Type: AuditInfo
+    ReferenceType: NonHierarchicalOwning
+    Children:
+    - Name: Users
+      Type: BaseObjectType
+    - Name: Groups
+      Type: BaseObjectType
+    - Name: WorkflowType
+      Type: PropertyType
+      DataType: WorkflowType
+      Value: 0
+- Name: SetTemperature
+  Id: g=c884bb0c969c372b80c69e9d9f21570f
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 50
+  Children:
+  - Name: AuditSigning Signature
+    Type: AuditInfo
+    ReferenceType: NonHierarchicalOwning
+    Children:
+    - Name: Users
+      Type: BaseObjectType
+    - Name: Groups
+      Type: BaseObjectType
+    - Name: WorkflowType
+      Type: PropertyType
+      DataType: WorkflowType
+      Value: 2
+- Name: SpeedFactor
+  Id: g=9548457916b472bf07d888455bfa7603
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 1.7799999713897705
+  Children:
+  - Name: AuditSigning Signature
+    Type: AuditInfo
+    ReferenceType: NonHierarchicalOwning
+    Children:
+    - Name: Users
+      Type: BaseObjectType
+    - Name: Groups
+      Type: BaseObjectType
+    - Name: WorkflowType
+      Type: PropertyType
+      DataType: WorkflowType
+      Value: 1
+- Name: ProductName
+  Id: g=eebc89144bbc978805597b5b0311b732
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "Prod_1"
+  Children:
+  - Name: AuditSigning Signature
+    Type: AuditInfo
+    ReferenceType: NonHierarchicalOwning
+    Children:
+    - Name: Users
+      Type: BaseObjectType
+    - Name: Groups
+      Type: BaseObjectType
+    - Name: WorkflowType
+      Type: PropertyType
+      DataType: WorkflowType
+      Value: 1
+- Name: AutoMode
+  Id: g=e78ce223eb40a57b53e04bdcae4724bc
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false
+  Children:
+  - Name: AuditSigning Signature
+    Type: AuditInfo
+    ReferenceType: NonHierarchicalOwning
+    Children:
+    - Name: Users
+      Type: BaseObjectType
+    - Name: Groups
+      Type: BaseObjectType
+    - Name: WorkflowType
+      Type: PropertyType
+      DataType: WorkflowType
+      Value: 0

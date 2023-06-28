@@ -1,0 +1,159 @@
+Name: AnalogAlarm
+Type: FolderType
+Children:
+- Name: TempHighAlarm
+  Type: ExclusiveLevelAlarmController
+  Children:
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../../Model/Alarms/ActTempVaule"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=39;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=39;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=39;i=83
+    Direction: Forward
+  - Name: HighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 70.0
+  - Name: Message
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Temperature High"}
+- Name: PresHighAlarm
+  Type: ExclusiveLevelAlarmController
+  Children:
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../../Model/Alarms/ActPreVaule"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=39;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=39;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=39;i=83
+    Direction: Forward
+  - Name: HighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 7.0
+  - Name: Message
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Presure High"}
+- Name: TempLowAlarm
+  Type: ExclusiveLevelAlarmController
+  Children:
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../../Model/Alarms/ActTempVaule"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=39;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=39;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=39;i=83
+    Direction: Forward
+  - Name: Message
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Temperature Low"}
+  - Name: LowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 30.0
+- Name: PresLowAlarm
+  Type: ExclusiveLevelAlarmController
+  Children:
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../../Model/Alarms/ActPreVaule"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=39;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=39;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=39;i=83
+    Direction: Forward
+  - Name: Message
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Presure Low"}
+  - Name: LowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 2.0

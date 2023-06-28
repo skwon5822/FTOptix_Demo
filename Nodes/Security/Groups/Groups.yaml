@@ -1,0 +1,16 @@
+Name: Groups
+Id: g=c9c9dcc2fed08915fcdc8dc4c79fe743
+Type: GroupsCategoryFolder
+Children:
+- Name: Operator
+  Id: g=c32e074a8a39e5037a95204197d66c5b
+  Type: GroupType
+- Name: Engineer
+  Id: g=b56d407eb7091baf8a525ad694a89bf6
+  Type: GroupType
+- Name: Manager
+  Id: g=dc6d384fa109a4553094d2b1a3af5ce9
+  Type: GroupType
+- Name: Administrator
+  Id: g=2a2956257fa620cb69df195f54acd780
+  Type: GroupType

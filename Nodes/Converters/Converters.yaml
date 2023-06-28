@@ -1,0 +1,126 @@
+Name: Converters
+Type: ConvertersCategoryFolder
+Children:
+- Name: ButtonSelection1
+  Id: g=c4c5cc8a08fc6c7c8d8b1ceb2d0aac08
+  Supertype: ConditionalConverter
+  ReferenceType: HasComponent
+  Children:
+  - Name: Condition
+    Type: BaseDataVariableType
+    DataType: Boolean
+    ReferenceType: HasSource
+    Value: false
+    Children:
+    - Name: ConditionalConverter1
+      Type: ConditionalConverter
+      Children:
+      - Name: Condition
+        Type: BaseDataVariableType
+        DataType: Boolean
+        ReferenceType: HasSource
+        Value: false
+        Children:
+        - Name: ExpressionEvaluator1
+          Type: ExpressionEvaluator
+          Children:
+          - Name: Expression
+            Type: BaseDataVariableType
+            DataType: String
+            ReferenceType: HasParameter
+            ModellingRule: Optional
+            Value: "{0} == (0)"
+          - Name: ns=2;Source0
+            Type: BaseDataVariableType
+            DataType: BaseDataType
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "{NodeId:ns=7;g=a0392a72-1fcb-a29a-6359-2594c025bc09}"
+      - Name: TrueValue
+        Type: BaseDataVariableType
+        DataType: Boolean
+        ReferenceType: HasParameter
+        ModellingRule: Optional
+        Value: true
+      - Name: FalseValue
+        Type: BaseDataVariableType
+        DataType: Boolean
+        ReferenceType: HasParameter
+        ModellingRule: Optional
+        Value: false
+  - Name: TrueValue
+    Type: BaseDataVariableType
+    DataType: Color
+    ReferenceType: HasParameter
+    Value: "#0fafff"
+  - Name: FalseValue
+    Type: BaseDataVariableType
+    DataType: Color
+    ReferenceType: HasParameter
+    ModellingRule: Optional
+    Value: "#f3f3f3"
+- Name: ButtonSelection2
+  Id: g=afdccac44004a347e7d9e8dd37e05823
+  Supertype: ConditionalConverter
+  ReferenceType: HasComponent
+  Children:
+  - Name: Condition
+    Type: BaseDataVariableType
+    DataType: Boolean
+    ReferenceType: HasSource
+    Value: false
+    Children:
+    - Name: ConditionalConverter1
+      Type: ConditionalConverter
+      Children:
+      - Name: Condition
+        Type: BaseDataVariableType
+        DataType: Boolean
+        ReferenceType: HasSource
+        Value: false
+        Children:
+        - Name: ExpressionEvaluator1
+          Type: ExpressionEvaluator
+          Children:
+          - Name: Expression
+            Type: BaseDataVariableType
+            DataType: String
+            ReferenceType: HasParameter
+            ModellingRule: Optional
+            Value: "{0} == (1)"
+          - Name: ns=2;Source0
+            Type: BaseDataVariableType
+            DataType: BaseDataType
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "{NodeId:ns=7;g=a0392a72-1fcb-a29a-6359-2594c025bc09}"
+      - Name: TrueValue
+        Type: BaseDataVariableType
+        DataType: Boolean
+        ReferenceType: HasParameter
+        ModellingRule: Optional
+        Value: true
+      - Name: FalseValue
+        Type: BaseDataVariableType
+        DataType: Boolean
+        ReferenceType: HasParameter
+        ModellingRule: Optional
+        Value: false
+  - Name: TrueValue
+    Type: BaseDataVariableType
+    DataType: Color
+    ReferenceType: HasParameter
+    ModellingRule: Optional
+    Value: "#0fafff"
+  - Name: FalseValue
+    Type: BaseDataVariableType
+    DataType: Color
+    ReferenceType: HasParameter
+    ModellingRule: Optional
+    Value: "#f3f3f3"

@@ -1,0 +1,116 @@
+Name: Recipes
+Type: RecipesCategoryFolder
+Children:
+- Name: Recipe_1
+  Id: g=856a868af232e33fd76c4cf127e58d88
+  Type: RecipeSchema
+  Children:
+  - Name: Root
+    Type: BaseObjectType
+    Children:
+    - Name: RecSetSpeed
+      Type: BaseDataVariableType
+      DataType: Int16
+      Value: 0
+    - Name: RecAutoMode
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+    - Name: RecSetTemp
+      Type: BaseDataVariableType
+      DataType: UInt32
+      Value: 0
+    - Name: RecSpeedFactor
+      Type: BaseDataVariableType
+      DataType: Float
+      Value: 0.0
+    - Name: RecProdName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: ""
+  - Class: Reference
+    Target: ns=42;i=27
+    Direction: Forward
+  - Class: Reference
+    Target: ns=42;i=33
+    Direction: Forward
+  - Class: Reference
+    Target: ns=42;i=31
+    Direction: Forward
+  - Class: Reference
+    Target: ns=42;i=44
+    Direction: Forward
+  - Class: Reference
+    Target: ns=42;i=35
+    Direction: Forward
+  - Class: Reference
+    Target: ns=42;i=37
+    Direction: Forward
+  - Class: Reference
+    Target: ns=42;i=76
+    Direction: Forward
+  - Class: Reference
+    Target: ns=42;i=53
+    Direction: Forward
+  - Class: Reference
+    Target: ns=42;i=62
+    Direction: Forward
+  - Class: Reference
+    Target: ns=42;i=55
+    Direction: Forward
+  - Class: Reference
+    Target: ns=42;i=58
+    Direction: Forward
+  - Class: Reference
+    Target: ns=42;i=60
+    Direction: Forward
+  - Name: Store
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"52e781502564223eb8c9f71ff84b85e9","Namespace":7}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"Id":1,"Namespace":25}
+  - Name: EditModel
+    Id: g=2562d06d80a41a32cccff5f668f43969
+    Type: BaseObjectType
+    Children:
+    - Name: RecSetSpeed
+      Type: BaseDataVariableType
+      DataType: Int16
+      Value: 0
+    - Name: RecAutoMode
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+    - Name: RecSetTemp
+      Type: BaseDataVariableType
+      DataType: UInt32
+      Value: 0
+    - Name: RecSpeedFactor
+      Type: BaseDataVariableType
+      DataType: Float
+      Value: 0.0
+    - Name: RecProdName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: ""
+  - Name: TableName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Recipe_Table"
+  - Name: TargetNode
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"7aa5a24c6880937e5e2cc18b353d4cbe","Namespace":7}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"IdType":2,"Id":"7aa5a24c6880937e5e2cc18b353d4cbe","Namespace":7}
+    - Name: NodeClass
+      Type: PropertyType
+      DataType: NodePointerNodeClass
+      Value: 2

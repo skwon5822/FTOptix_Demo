@@ -1,0 +1,77 @@
+Name: Alarms
+Type: FolderType
+Children:
+- Name: A1_EstopActive
+  Id: g=cef7a24fd757ceb5154595d36f46b460
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false
+- Name: A2_SafetDoopOpen
+  Id: g=e7bf7de566233dbf27505c92b8c1a126
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false
+- Name: A3_CommunicationLost
+  Id: g=f93e5a5634aee355990c06c03c86d85a
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false
+- Name: ActTempVaule
+  Id: g=02904b9369b2fdc4a9d2711b06cde836
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 60
+- Name: ActPreVaule
+  Id: g=4876e89a2248c92398771b675383b44c
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 5
+- Name: AlarmFromDateTime
+  Id: g=8949d88b7272119a8640eb92a296b1be
+  Type: BaseDataVariableType
+  DataType: DateTime
+  Value: "2023-03-07T09:00:00.0000000"
+- Name: AlarmToDateTime
+  Id: g=79e26bdbac499b8301c170c07d88c718
+  Type: BaseDataVariableType
+  DataType: DateTime
+  Value: "2023-03-07T20:00:00.0000000"
+- Name: AlarmList
+  Id: g=a1d749e32067b19384a25edd3a27119c
+  Type: BaseObjectType
+  Children:
+  - Name: EStop_Active
+    Id: g=7ae5ba070333df56006b4bbd17c37039
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Safety_Door_Open
+    Id: g=9287fab2064291950ad46e4ea21d4bc9
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Communication_Lost
+    Id: g=efdfa38386384156aa6b49bf87e06af7
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Temperature_Low
+    Id: g=35458ff933d28e41030a583175dca539
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Temperature_High
+    Id: g=c32a9ed19d8d765522ec3fdad551bfd7
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Pressure_Low
+    Id: g=5d30efe50733fa96de8629598ce50964
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Pressure_High
+    Id: g=802876707a5e3e94efdd65e7c6d5c163
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
